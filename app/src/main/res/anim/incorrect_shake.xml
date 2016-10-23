@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--o p no valor significa que movimenta 5% da largura do parent, para ser da View é só remover o p-->
+    <!--o duration está em miliseconds-->
+    <translate android:duration="100" android:fromXDelta="0"
+        android:toXDelta="-5%p"/>
+
+    <translate android:duration="100" android:fromXDelta="-5%p"
+        android:toXDelta="5%p" android:startOffset="100"/>
+
+    <translate android:duration="100" android:fromXDelta="5%p"
+        android:toXDelta="-5%p" android:startOffset="200"/>
+</set>

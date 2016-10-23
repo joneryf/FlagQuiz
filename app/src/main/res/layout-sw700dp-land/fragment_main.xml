@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quizLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.developer.jonery.flagquiz.MainActivityFragment"
+    tools:showIn="@layout/activity_main"
+    android:orientation="horizontal">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.developer.jonery.flagquiz.SettingsActivityFragment"
+        android:id="@+id/settingsActivityFragment"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.developer.jonery.flagquiz.MainActivityFragment"
+        android:id="@+id/quizFragment"
+        android:layout_weight="2"
+        tools:layout="@layout/fragment_main" />
+
+</LinearLayout>
